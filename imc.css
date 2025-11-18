@@ -1,0 +1,71 @@
+main  {
+    width: 100%;
+    margin: 0 auto;
+    background-color:  rgb(240,255,248);
+
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+form {
+    margin: 40px 0;
+    background: #eeeeee;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    width: 40%;
+    border-radius: 5px 10px 5px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+}
+
+h1 {
+    width: 100%;
+    margin: 0 auto;
+    background-color:  rgb(139, 76, 211);
+    text-align: center;
+
+}
+
+.resultado{
+    margin: 40px 0;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    width: 40%;
+    position: relative;
+    justify-content: space-between;
+    background: #99bfc9;
+    border: 1px solid #4e435c;
+    border-radius: 5px 10px 5px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+    color: #000000;
+    text-align: center;
+}
+
+.imc{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+    padding: 1.5em 0;
+    font-size: 3em;
+}
+.classificacao{
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+    padding: 1em 0;
+    font-size: 2em;
+
+}
+.risco{
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+    padding-top: 1em;
+    font-size: 1em;
+    padding: 0 1em 1em 1em;
+}
+ 
