@@ -1,41 +1,68 @@
-main  {
-    width: 100%;
-    margin: 0 auto;
-    background-color:  rgb(240,255,248);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(240,255,248);
+}
 
+h1 {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    background-color: rgb(139, 76, 211);
+    text-align: center;
+    color: white;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .formulario {
     display: flex;
     justify-content: space-around;
-
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; 
 }
 
 form {
-    margin: 40px 0;
     background: #eeeeee;
-    padding: 2%;
-    font-family: 'Roboto', sans-serif;
+    padding: 20px;
     width: 40%;
+    min-width: 280px;
     border-radius: 5px 10px 5px 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
 }
 
-h1 {
+input {
     width: 100%;
-    margin: 0 auto;
-    background-color:  rgb(139, 76, 211);
-    text-align: center;
-
+    padding: 10px;
+    margin-top: 5px;
 }
 
-.resultado{
-    margin: 40px 0;
-    padding: 2%;
-    font-family: 'Roboto', sans-serif;
+.enviar {
+    margin-top: 15px;
+    background: rgb(139, 76, 211);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    background: rgb(115, 60, 175);
+}
+
+.resultado {
+    padding: 20px;
     width: 40%;
-    position: relative;
-    justify-content: space-between;
+    min-width: 280px;
     background: #99bfc9;
     border: 1px solid #4e435c;
     border-radius: 5px 10px 5px 10px;
@@ -44,28 +71,62 @@ h1 {
     text-align: center;
 }
 
-.imc{
+.imc {
     display: block;
-    text-align: center;
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
     padding: 1.5em 0;
     font-size: 3em;
 }
-.classificacao{
+
+.classificacao {
     display: block;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
     padding: 1em 0;
     font-size: 2em;
+}
 
-}
-.risco{
+.risco {
     display: block;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
-    padding-top: 1em;
+    padding: 1em;
     font-size: 1em;
-    padding: 0 1em 1em 1em;
 }
- 
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    form, .resultado {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form, .resultado {
+        width: 90%;
+    }
+
+    .imc {
+        font-size: 2.2em;
+    }
+
+    .classificacao {
+        font-size: 1.5em;
+    }
+
+    .risco {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .imc {
+        font-size: 1.8em;
+    }
+}
